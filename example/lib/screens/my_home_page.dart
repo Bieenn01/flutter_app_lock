@@ -70,6 +70,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 }
               },
             ),
+            // In MyHomePage.dart
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/settings');
+              },
+              child: const Text('Open App Lock Settings'),
+            ),
+
           ],
         ),
       ),
